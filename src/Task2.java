@@ -25,7 +25,7 @@ public class Task2 {
                     break;
                 case 4:
                     if (c=='1')state = 4;
-                    else state = 0;
+                    else state = 1;
                     break;
 
             }
