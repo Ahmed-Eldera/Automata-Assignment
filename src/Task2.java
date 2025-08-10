@@ -20,7 +20,11 @@ public class Task2 {
                     else state = 0;
                     break;
                 case 3:
-                    if (c == '1') state = 3;
+                    if (c == '1') state = 4;
+                    else state = 3;
+                    break;
+                case 4:
+                    if (c=='1')state = 4;
                     else state = 0;
                     break;
 
@@ -31,7 +35,7 @@ public class Task2 {
     }
 
     public static void main(String[] args) {
-        String[] inputs = {"000", "0001", "0001111", "001", "0111", "0000", "111000"};
+        String[] inputs = {"0000", "0001", "0001111", "001", "0111", "0000", "111000"};
         System.out.println("Three 0s followed by any number of 1s");
         for (String input : inputs) {
             System.out.printf("Input: " + input + " → " + (isAccepted(input) ? " Accepted" : " Rejected")+'\n');
